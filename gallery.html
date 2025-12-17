@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Pranyas Art Gallery</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Gallery</h1>
+    <p>Click images to enlarge, filter or search</p>
+  </header>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://www.instagram.com/pranyas_stuff" target="_blank">Instagram</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <div class="controls">
+      <div class="filters">
+        <button data-filter="all">Show All</button>
+        <button data-filter="abstract">Abstract</button>
+        <button data-filter="landscape">Landscape</button>
+        <button data-filter="portrait">Portrait</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search artworks..." />
+      </div>
+    </div>
+
+    <section class="gallery-grid" id="galleryGrid">
+      <div class="art-card" data-category="abstract">
+        <img src="https://i.pinimg.com/736x/19/f4/2d/19f42d28aa546528e44e10ede5c88c92.jpg" alt="Peacock Painting">
+        <h3>Peacock Acrylic Canvas Painting</h3>
+        <p>A vibrant Peacock Canvas Painting - Home Vastu Decor
+A handmade acrylic canvas painting with peacock which symbolises beauty, grace, prosperity and harmony.</p>
+
+      </div>
+      <div class="art-card" data-category="landscape">
+        <img src="https://i.pinimg.com/736x/79/4f/0a/794f0af378a6a28c821d4ca2d9badd05.jpg" alt="Landscape">
+      <h3>Waterfall Acrylic Canvas Painting</h3>
+      <p>Waterfall Canvas Painting - Home Vastu Decor<br>
+A handmade acrylic canvas painting of Nature with waterfall that attracts positive energy and prosperity. Painting for North or North East direction 🌱🌊
+</p>
+
+      </div>
+      <div class="art-card" data-category="portrait">
+        <img src="images/art3.jpg" alt="Portrait" />
+        <h3>Portrait</h3>
+        <p>Expressive portrait capturing emotions.</p>
+      </div>
+      <!-- Add more art-card items -->
+    </section>
+
+    <div class="lightbox" id="lightbox">
+      <img id="lightboxImg" src="" alt="Enlarged Art" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 My Art Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
